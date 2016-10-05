@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Marcus" ng-cloak>
+<head>
+    <meta charset="UTF-8">
+    <title>Marcus Gabilheri</title>
+    <meta name="theme-color" content="#212121">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+    <link href="bower_components/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div ng-view></div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-scrollspy/jquery-scrollspy.js"></script>
+<script src="bower_components/jquery-sticky/jquery.sticky.js"></script>
+<script src="bower_components/jquery-backstretch/jquery.backstretch.min.js"></script>
+<script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+<script src="bower_components/wow/dist/wow.min.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="js/main.js"></script>
+<script src="views/home/HomeController.js"></script>
+<script src="views/projects/ProjectsController.js"></script>
+<script src="views/single_project/SingleProjectController.js"></script>
+
+<script>
+    /* ---------------------------------------------- /*
+     * Preloader
+     /* ---------------------------------------------- */
+
+    $(window).on('load', function () {
+        $('#status').fadeOut();
+        $('#preloader').delay(350).fadeOut('slow');
+    });
+</script>
+</body>
+</html>

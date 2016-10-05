@@ -1,0 +1,191 @@
+<header>
+    <section id="home" class="js-height-full module-image bg-stretch">
+        <div class="intro shadow-box">
+            <div class="who-creates">{{ data.greeting }}</div>
+            <h2> {{ data.title }}</h2>
+            <div class="who-creates">{{ data.subtitle }}</div>
+        </div>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
+    </section>
+</header>
+
+<nav class="main-nav grey darken-4" id="nav" style="padding-left: 30px; padding-right: 30px;">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Marcus Gabilheri</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a scroll-on-click href="#projects">Projects</a></li>
+            <li><a scroll-on-click href="#skills">Skills</a></li>
+            <li><a scroll-on-click href="#about">About</a></li>
+            <li><a href="../../assets/MarcusGabilheriResume.pdf" target="_self">Resume</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav right">
+            <li><a scroll-on-click href="#projects">Projects</a></li>
+            <li><a scroll-on-click href="#skills">Skills</a></li>
+            <li><a scroll-on-click href="#about">About</a></li>
+            <li><a href="../../assets/MarcusGabilheriResume.pdf" target="_self">Resume</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="main">
+
+    <section id="projects" class="module module-gray">
+        <div class="row content">
+            <div class="col s8 offset-s2">
+                <div class="module-header">
+                    <div class="module-line"></div>
+                    <h2 class="module-title">Projects</h2>
+                    <div class="module-line"></div>
+                </div>
+            </div>
+            <div class="col s12 center-align" style="margin-bottom: 20px;">
+                <p style='line-height: 30px'>
+                    <a href="https://www.github.com/fnk0" class="teal-text" style="font-size: 20px;" target="_blank">
+                        <img src='./assets/icons/ic_github.png' width="60px" style='vertical-align: middle;'/>
+                        &nbsp;&nbsp;Check out my Github for more projects!!
+                    </a>
+                </p>
+            </div>
+            <div class="row">
+                <div ng-repeat="p in data.projects" class="col s12 m4 l3 wow fadeInUp">
+                    <div class="card-panel center-align" style="min-height: 400px;">
+                        <img src="{{ p.thumb }}" class="iconbox-icon"/>
+                        <h3 class="grey-text text-darken-3" style="padding-top: 15px;">{{ p.name }}</h3>
+                        <p class="grey-text text-darken-2" style="padding-top: 15px;"> {{ p.desc }}</p>
+                        <a href="#projects/{{ p.url }}" class="teal-text" ng-show="p.url">More info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="module module-gray">
+        <div class="row content" ng-repeat="skill in skills">
+            <div class="col s8 offset-s2">
+                <div class="module-header">
+                    <div class="module-line"></div>
+                    <h2 class="module-title"> {{ skill.name }}</h2>
+                    <div class="module-line"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div ng-repeat="item in skill.items" class="col s12 m4 l3 wow fadeInUp">
+                    <div class="card-panel center-align" style="min-height: 400px;">
+                        <img src="{{ item.icon }}" class="iconbox-icon"/>
+                        <h3 class="grey-text text-darken-3" style="padding-top: 15px;">{{ item.name }}</h3>
+                        <p class="grey-text text-darken-2" style="padding-top: 15px;"> {{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="grey-text text-darken-4 wow fadeInUp" scroll-on-click>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <div class="module-header">
+                    <div class="module-line"></div>
+                    <h2 class="module-title">About Me</h2>
+                    <div class="module-line"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row teal lighten-2 white-text" style="">
+            <div class="slider col s12 m6">
+                <ul class="slides">
+                    <li><img src="./assets/images/c_m.jpg"/></li>
+                    <li><img src="./assets/images/galadriel.jpg"/></li>
+                    <li><img src="./assets/images/gandalf.jpg"/></li>
+                </ul>
+            </div>
+            <div class="col s12 m6" style="padding-top: 20px;">
+                <div class="content">
+                    <p ng-repeat="p in data.about.description" class="about-item">
+                        {{ p }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col s12">
+
+                    <ul class="social-links">
+                        <li><a href="https://github.com/fnk0" class="wow fadeInUp" target="_blank"><img
+                                src="assets/icons/ic_github.png"></a></li>
+                        <li><a href="https://www.facebook.com/marcus.gabilheri" class="wow fadeInUp" target="_blank"><img
+                                src="assets/icons/ic_facebook.png"></a></li>
+                        <li><a href="https://plus.google.com/+MarcusViniciusAndreoGabilheri" class="wow fadeInUp" data-wow-delay=".2s"
+                               target="_blank"><img src="assets/icons/ic_google_plus.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/marcusgabilheri" class="wow fadeInUp"
+                               data-wow-delay=".3s" target="_blank"><img src="assets/icons/ic_linkedin.png"></a></li>
+                        <li><a href="mailto:marcus@gabilheri.com" class="wow fadeInUp" target="_blank"
+                               data-wow-delay=".5s"><img src="assets/icons/ic_mail.png"></a></li>
+                        <li><a href="https://twitter.com/marcus_fnk" class="wow fadeInUp" target="_blank"
+                               data-wow-delay=".5s"><img src="assets/icons/ic_twitter.png"></a></li>
+                    </ul>
+
+                    <p class="copyright">
+                        © Marcus Gabilheri, All Rights Reserved.
+                    </p>
+
+                </div>
+
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </footer>
+
+</div>
+
+<script>
+
+    $('.header').sticky({
+        topSpacing: 0
+    });
+
+    $(".js-height-full").height($(window).height());
+
+    $('.slider').slider({
+        full_width: false,
+        height: 600,
+        indicators: false
+    });
+
+    var mn = $(".main-nav");
+    var mainContent = $('.main');
+    mns = "main-nav-scrolled";
+    hdr = $('header').height();
+
+    $('body').css({
+        paddingTop: hdr
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > hdr) {
+            mn.addClass(mns);
+            mainContent.css({
+                paddingTop: 90
+            });
+        } else {
+            mn.removeClass(mns);
+            mainContent.css({
+                paddingTop: 0
+            });
+        }
+    });
+
+    $(".button-collapse").sideNav();
+
+    var wow = new WOW({
+        mobile: false
+    });
+    wow.init();
+</script>
