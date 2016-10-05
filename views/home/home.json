@@ -1,7 +1,7 @@
 {
   "greeting": "Hello, my name is",
   "title": "Marcus Gabilheri",
-  "subtitle": "I am a college student specialized in mobile apps development.",
+  "subtitle": "I am a college student who specializes in mobile apps development.",
   "banner_url": "assets/images/profile_big_resized.jpg",
   "projects": [
     {
@@ -20,13 +20,13 @@
       "name": "Inbox Dashclock Extension",
       "thumb": "./assets/inbox_dashclock/icon.webp",
       "url": "",
-      "desc": "Inbox extension for the popular DashClock widget by Roman Nurik. Allows to see count broken down by groups on the widget."
+      "desc": "Inbox extension for the popular DashClock widget by Roman Nurik. Allows to see number of emails in your inbox broken down by groups on the widget."
     },
     {
       "name": "Paws Alert",
       "thumb": "./assets/paws/icon.png",
       "url": "",
-      "desc": "App winner of the Oklahoma State App Contest Spring 2016. Uses geofences to keep track of reported pets and alert users."
+      "desc": "Winning submission for the Oklahoma State App Contest in Spring 2016. Uses geofences to alert users of pets reported lost nearby."
     }
   ],
   "skills": [
@@ -36,42 +36,42 @@
         {
           "name": "Android",
           "icon": "./assets/icons/android.png",
-          "description": "I can create professional Android apps using widely industry approved open source libraries such as Dagger 2 or Retrofit."
+          "description": "I have created professional Android apps using common open source libraries, including Dagger 2 and Retrofit."
         },
         {
           "name": "iOS",
           "icon": "./assets/icons/apple.png",
-          "description": "Ability to develop iOS apps in Swift and with standard open source libraries such as Alamofire or Realm."
+          "description": "I have developed iOS apps in Swift with standard open source libraries like Alamofire and Realm."
         },
         {
           "name": "UI/UX Design",
           "icon": "./assets/icons/ux_design.png",
-          "description": "Understandent of Mobile UX principles and ability to design applications using Material Design."
+          "description": "I understand the principles of Mobile UX design and have created beautiful applications using Material Design guidelines."
         },
         {
           "name": "Node JS",
           "icon": "./assets/icons/node.png",
-          "description": "Created a server for a medium size application using NodeJS, Express and Mongo DB."
+          "description": "I have created a server for a medium size application using NodeJS, Express and Mongo DB."
         },
         {
           "name": "Angular JS",
           "icon": "./assets/icons/angular.png",
-          "description": "Ability to create Web applications and websites using Angular JS. This website was developed using Angular."
+          "description": "I have created Web Applications and Websites using Angular JS. This website was developed using Angular."
         },
         {
           "name": "Java",
           "icon": "./assets/icons/java.png",
-          "description": "Ability to use Java to develop applications, mobile, desktop and server side."
+          "description": "I have used Java to develop mobile, desktop and server side applications."
         },
         {
           "name": "Github",
           "icon": "./assets/icons/github.png",
-          "description": "Understatement of source control to develop applications. Most of the applications I've developed can be found on my Github profile."
+          "description": "I have used Git Version Control to manage many of my projects. Most applications I have created can be found on my Github profile."
         },
         {
           "name": "Python / Django",
           "icon": "./assets/icons/django.png",
-          "description": "Created a web server for an application using Django. Application features included managing database, analyzing data, processing, manipulation and storing images."
+          "description": "I have Created a web server for an application using Django. Application features included managing a database, analyzing and processing data, and manipulation and storage of images."
         }
       ]
     }
@@ -79,9 +79,9 @@
   "about": {
     "pic": "",
     "description": [
-      "I'm a Computer Science Student at Oklahoma State University living in Stillwater, Oklahoma. I am currently working as a Full Stack developer for the Plants & Soil Sciences at Oklahoma State University.",
-      "During my college career I've participated and won 1st place 3 times in my university's App Contest.",
-      "I'm also the founder and organizer of the Google Developers Group OSU Stillwater (GDG OSU) chapter. GDG activies involve planning and running events to expose students to a variety of topics. During the previous 3 years I've taught and coached many students on how to build their 1st Android application and developed a variety of tutorials that can be found on my github page.",
+      "I am a Computer Science Student at Oklahoma State University living in Stillwater, Oklahoma. I am currently working as a Full Stack developer for the Plants & Soil Sciences Department at Oklahoma State University.",
+      "During my college career I have participated and won 1st place in the Oklahoma State University App Contest 3 years in a row",
+      "I'm also the founder and organizer of the Google Developers Group OSU Stillwater (GDG OSU) chapter. GDG activies involve planning and running events to expose students to a variety of topics. During the previous 3 years I have taught and coached many students on how to build their 1st Android application and developed a variety of tutorials that can be found on my github page.",
       "When I'm not in class or working I really enjoy developing mobile apps, playing with my pets, hanging out with my wife and cooking."
     ]
   }

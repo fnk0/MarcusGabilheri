@@ -11,7 +11,7 @@
   },
   "description": [
     "fit•hub was one of the Grand Prize winners of the Google Fit Developers Challenge!!",
-    "Syncs multiple accounts into one single dataset or allows user to view them individually. fit•hub can only reads data from the official apps and can not be used in substitution of them.",
+    "Syncs multiple accounts into one single dataset or allow users to view them individually. fit•hub can only read data from the official apps for each fitness tracker and can not be used in substitution of them.",
     "Allows users with different fitness trackers to compete among themselves."
   ],
   "technologies": [
@@ -19,9 +19,9 @@
       "icon": "./assets/icons/android.png",
       "name": "Android",
       "usage": [
-        "This app was first developed as a Android app only for the Google fit Contest.",
+        "This app was first developed as an Android only app for the Google fit Contest.",
         "The current Android implementation is developed using modern Android principles for efficient data usage.",
-        "The app uses Dagger 2 for dependency injection, RXJava, OkHttp3 and Retrofit2 for it's data retrieval. The local cache uses SQLite among SQLBrite to be able to perform reactive queries."
+        "The app uses Dagger 2 for dependency injection, RXJava, OkHttp3 and Retrofit 2 for it's data retrieval. The local cache uses SQLite enhanced with SQLBrite to be able to perform reactive queries."
       ]
     },
     {
@@ -29,10 +29,10 @@
       "name": "Node JS",
       "usage": [
         "The server stack is completely developed in NodeJS with Mongo DB.",
-        "Tasks done by the server include sync of user fitness data and push to the phone as well as taken care of notifying storing the data on the Mongo DB.",
-        "Data analysis is also done by the NodeJS to find trends on fitness usage to be used on future features of the app.",
-        "All the charts in the app where made using MPAndroidChart with a modified Data Renderer to allow more interesting charts.",
-        "The app also makes usage of Google API's to retrieve Google Fit data, Sign In and Firebase message."
+        "Tasks done by the server include syncing of user fitness data and push notifications to the phone as well as taking care of storing the data in a Mongo DB instance.",
+        "Data analysis is also done by NodeJS to find trends on fitness usage to be used on future features of the app.",
+        "All the charts in the app were made using MPAndroidChart with a modified Data Renderer to allow for more interesting charts.",
+        "The app also makes use of Google API's to retrieve Google Fit data, User Authentication and Firebase messaging."
       ]
     },
     {
@@ -42,7 +42,7 @@
         "Currently under development. The release date is estimated to be mid November.",
         "The iOS app is completely developed in Swift 3.",
         "The app uses the Material framework by CosmicMind for the UI Layer.",
-        "For the application layer the app uses Alamofire for the network request and Realm for the data cache persistence layer."
+        "The data layer uses Alamofire to perform network requests and Realm for on-device data persistence."
       ]
     }
   ],
